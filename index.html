@@ -4,3 +4,35 @@
 <script async src="https://cse.google.com/cse.js?cx=4c392977c8399b18d">
 </script>
 <div class="gcse-search"></div>
+<html>
+<head>
+<title>Googleアカウントでログイン</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="910254107383-4i3mictq19u2tq2sf1rtiuotrnkrlgur.apps.googleusercontent.com">
+</head>
+<body>
+<div data-onsuccess="onSignIn"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+function onSignIn(googleUser) {
+    var id_token = googleUser.getAuthResponse().id_token;
+    $.ajax({
+        type: "POST",
+        url: "login.php",
+        data:{ 'token':id_token, },
+        dataType :'json',
+    }).done(function(json){
+        var html = "";
+        var key;
+        for (key in json){
+            html += "<p>"+key+" => "+json[key]+"</p>";
+        }
+        $("#data").html(html);
+    });
+}
+</script>
+<div id="data"></div>
+</body>
+</html>
