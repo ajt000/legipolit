@@ -1,33 +1,42 @@
-<!doctype html
-<html class="no-js" lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="https://lh3.google.com/u/0/d/1m0fYZKlWG6l7dqLBIY0ln31E35zp5R8t=w1365-h671-iv2">
-	 <!doctype html>
-<html class="Hikino" lang="ja">
-  <meta charset="utf-8">
-	
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html class="no-js" lang="ja"><head>
+<body bgcolor="#808080" text="#cccccc">
 <header>
-　<title>PE Launcher</title>
+　<link rel="icon" href="https://lh3.google.com/u/0/d/1m0fYZKlWG6l7dqLBIY0ln31E35zp5R8t=w1365-h671-iv2">
+<h3>PE Launcher<h3>
+<a href="https://www.cman.jp" class="button">ログイン</a>
+</header>
+<title>PE Launcher</title>
 <script async src="https://cse.google.com/cse.js?cx=4c392977c8399b18d">
 </script>
-<head>
 <div class="gcse-search"></div>
-<style type="text/css">
+<head>
+	<link rel="manifest" href="./manifest.json">
+  <script>
+    // service workerが有効なら、service-worker.js を登録します
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Registered'); });
+   }
+  </script>
+<style>
+
+</style>
+<style>
+.example131 {
+	position: relative;
+	width: 50px; /* 任意 */
+	height:10px; /* 任意 */
+}
 header {
 	position: relative;
 	width: 100%;
-	line-height: 10px;
+	line-height: 5px;
 	background: #3c3c3c;
 	display: inline-block;
 	vertical-align: middle;
 }
-/* ロゴ */
 
-img.img {
-width: 16px;
-height: 10px;
-}
 /* ボタン */
 header .button {
 	position: absolute;
@@ -50,8 +59,23 @@ header .button a {
 	border-radius: 10px;
 }
 </style>
-
-  </head>
-  <body>
-  </body>
-</html>
+<style type="text/css">
+.button {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 5pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 10px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+</style>
