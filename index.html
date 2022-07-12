@@ -13,9 +13,30 @@
 <title>PE Launcher</title>
 	<script async src="https://cse.google.com/cse.js?cx=84995421790dcc012"></script>
 <div class="gcse-search"></div>
-	<a href="Google.html" class="button">サンプルサイトへ飛びます。</a>
+	<a href="Google.html" class="buttton">サンプルサイトへ飛びます。</a>
 </body>
 	<link rel="manifest" href="./manifest.json">
+	<style type="text/css">
+.buttton {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 25px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.buttton:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+</style>
   <script>
     // service workerが有効なら、service-worker.js を登録します
     if ('serviceWorker' in navigator) {
