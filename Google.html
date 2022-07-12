@@ -1,2 +1,40 @@
 <script async src="https://cse.google.com/cse.js?cx=4c392977c8399b18d"></script>
 <div class="gcse-searchbox-only"></div>
+<button id="enable">Enable notifications</button>
+<script>
+function askNotificationPermission() {
+  // function to actually ask the permissions
+  function handlePermission(permission) {
+    // Whatever the user answers, we make sure Chrome stores the information
+    if(!('permission' in Notification)) {
+      Notification.permission = permission;
+    }
+
+    // set the button to shown or hidden, depending on what the user answers
+    if(Notification.permission === 'denied' || Notification.permission === 'default') {
+      notificationBtn.style.display = 'block';
+    } else {
+      notificationBtn.style.display = 'none';
+    }
+  }
+
+  // Let's check if the browser supports notifications
+  if (!('Notification' in window)) {
+    console.log("This browser does not support notifications.");
+  } else {
+    if(checkNotificationPromise()) {
+      Notification.requestPermission()
+      .then((permission) => {
+        handlePermission(permission);
+      })
+    } else {
+      Notification.requestPermission(function(permission) {
+        handlePermission(permission);
+      });
+    }
+  }
+}
+  var img = '/to-do-notifications/img/icon-128.png';
+var text = 'HEY! Your task "' + title + '" is now overdue.';
+var notification = new Notification('To do list', { body: text, icon: img });
+</script>
