@@ -19,7 +19,12 @@
       navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Registered'); });
    }
   </script>
-<style>
+<style type="text/css">
+	.custom-search table.gsc-search-box {
+    height: 31px;
+    margin-bottom: 0;
+}
+	
 .custom-search .gsc-control-cse {
     background: none;
     border: none;
