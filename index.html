@@ -24,6 +24,130 @@
 <li><a href="https://www.cman.jp" class="buttton">移動する</a></li>
 <li><a href="https://www.cman.jp" class="buttton">移動する</a></li>
 <style>
+header {
+	position: relative;
+	width: 100%;
+	line-height: 10px;
+	background: #3c3c3c;
+	display: inline-block;
+	vertical-align: middle;
+}
+/* ロゴ */
+header .logo {
+	padding: 0 20px;
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: .2em;
+}
+/* ボタン */
+/* ボタンのデザイン */
+header .button a {
+	display: block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	font-size: 14px;
+	color: #3c3c3c;
+	text-align: center;
+	letter-spacing: .2em;
+	text-indent: .2em;
+	border-radius: 10px;
+}
+</style>
+<style type="text/css">
+header .button {
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%);
+}
+.button {
+  display       : inline-block;
+  font-size     : 5pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 36px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.button:hover {
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+.buttton {
+  display       : inline-block;
+  font-size     : 14pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 36px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.buttton:hover {
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+</style>
+<footer id="footer">
+  <section class="primary">
+    <div class="flex">
+      <div class="left">
+        <p class="logo"><a href="#">COMPANY</a></p>
+        <p class="address">
+          〒100-0005 東京都千代田区丸の内１丁目<br>
+          TEL : 123-456-9999　/　FAX : 123-456-0000
+        </p>
+        <ul class="sns-navi">
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="navi-section">
+          <p class="parent"><a href="#">商品</a></p>
+          <ul class="navi">
+            <li><a href="#">商品A</a></li>
+            <li><a href="#">商品B</a></li>
+            <li><a href="#">商品C</a></li>
+            <li><a href="#">商品D</a></li>
+          </ul>
+        </div>
+        <div class="navi-section">
+          <p class="parent"><a href="#">企業情報</a></p>
+          <ul class="navi">
+            <li><a href="#">会社案内</a></li>
+            <li><a href="#">ニュースリリース</a></li>
+            <li><a href="#">IR</a></li>
+            <li><a href="#">CSR</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div class="navi-section">
+          <p class="parent"><a href="#">キャンペーン情報</a></p>
+          <p class="parent"><a href="#">CMギャラリー</a></p>
+          <p class="parent"><a href="#">お問い合わせ</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="secondary">
+    <ul class="sitenavi">
+      <li><a href="#">サイトマップ</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+    </ul>
+    <p class="copyright">Copyright WEBSITE,Inc. All rights reserved.</p>
+  </section>
+</footer>
+<style>
 HTML CSSResult Skip Results Iframe
 EDIT ON
 #footer {
@@ -234,128 +358,5 @@ body {
 }
 
 Resources
-header {
-	position: relative;
-	width: 100%;
-	line-height: 10px;
-	background: #3c3c3c;
-	display: inline-block;
-	vertical-align: middle;
-}
-/* ロゴ */
-header .logo {
-	padding: 0 20px;
-	font-size: 18px;
-	color: #fff;
-	letter-spacing: .2em;
-}
-/* ボタン */
-/* ボタンのデザイン */
-header .button a {
-	display: block;
-	width: 120px;
-	height: 40px;
-	line-height: 40px;
-	background: #fff;
-	font-size: 14px;
-	color: #3c3c3c;
-	text-align: center;
-	letter-spacing: .2em;
-	text-indent: .2em;
-	border-radius: 10px;
-}
-</style>
-<style type="text/css">
-header .button {
-	position: absolute;
-	top: 50%;
-	right: 1rem;
-	transform: translateY(-50%);
-}
-.button {
-  display       : inline-block;
-  font-size     : 5pt;        /* 文字サイズ */
-  text-align    : center;      /* 文字位置   */
-  cursor        : pointer;     /* カーソル   */
-  padding       : 12px 36px;   /* 余白       */
-  background    : #000066;     /* 背景色     */
-  color         : #ffffff;     /* 文字色     */
-  line-height   : 1em;         /* 1行の高さ  */
-  transition    : .3s;         /* なめらか変化 */
-  border        : 2px solid #000066;    /* 枠の指定 */
-}
-.button:hover {
-  color         : #000066;     /* 背景色     */
-  background    : #ffffff;     /* 文字色     */
-}
-.buttton {
-  display       : inline-block;
-  font-size     : 14pt;        /* 文字サイズ */
-  text-align    : center;      /* 文字位置   */
-  cursor        : pointer;     /* カーソル   */
-  padding       : 12px 36px;   /* 余白       */
-  background    : #000066;     /* 背景色     */
-  color         : #ffffff;     /* 文字色     */
-  line-height   : 1em;         /* 1行の高さ  */
-  transition    : .3s;         /* なめらか変化 */
-  border        : 2px solid #000066;    /* 枠の指定 */
-}
-.buttton:hover {
-  color         : #000066;     /* 背景色     */
-  background    : #ffffff;     /* 文字色     */
-}
-</style>
-<footer id="footer">
-  <section class="primary">
-    <div class="flex">
-      <div class="left">
-        <p class="logo"><a href="#">COMPANY</a></p>
-        <p class="address">
-          〒100-0005 東京都千代田区丸の内１丁目<br>
-          TEL : 123-456-9999　/　FAX : 123-456-0000
-        </p>
-        <ul class="sns-navi">
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-        </ul>
-      </div>
-      <div class="right">
-        <div class="navi-section">
-          <p class="parent"><a href="#">商品</a></p>
-          <ul class="navi">
-            <li><a href="#">商品A</a></li>
-            <li><a href="#">商品B</a></li>
-            <li><a href="#">商品C</a></li>
-            <li><a href="#">商品D</a></li>
-          </ul>
-        </div>
-        <div class="navi-section">
-          <p class="parent"><a href="#">企業情報</a></p>
-          <ul class="navi">
-            <li><a href="#">会社案内</a></li>
-            <li><a href="#">ニュースリリース</a></li>
-            <li><a href="#">IR</a></li>
-            <li><a href="#">CSR</a></li>
-            <li><a href="#">採用情報</a></li>
-          </ul>
-        </div>
-        <div class="navi-section">
-          <p class="parent"><a href="#">キャンペーン情報</a></p>
-          <p class="parent"><a href="#">CMギャラリー</a></p>
-          <p class="parent"><a href="#">お問い合わせ</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="secondary">
-    <ul class="sitenavi">
-      <li><a href="#">サイトマップ</a></li>
-      <li><a href="#">プライバシーポリシー</a></li>
-    </ul>
-    <p class="copyright">Copyright WEBSITE,Inc. All rights reserved.</p>
-  </section>
-</footer>
-
 Resources
+</style>
